@@ -1,11 +1,11 @@
 //utils
 @import "./utils/variables";
-@import "./utils/visually-hidden";
 @import "./utils/placeholders";
 @import "./utils/mixins";
 
 //base
 @import "./base/common";
+@import "./base/visually-hidden";
 
 //components
 @import "./components/modal-btn";
