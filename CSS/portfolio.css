@@ -144,8 +144,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
@@ -163,6 +161,20 @@ img {
   width: 18px;
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close-btn {
@@ -266,9 +278,6 @@ img {
 }
 
 .modal-form-policy-label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71429;
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
@@ -293,6 +302,23 @@ img {
   background-image: url(../images/modal/icon-check.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form-policy-label {
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 1.16667;
+    padding-left: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-policy-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+  }
 }
 
 .checkbox-wrap {
