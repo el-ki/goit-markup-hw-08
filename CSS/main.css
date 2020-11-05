@@ -414,6 +414,10 @@ img {
   margin-right: 50px;
 }
 
+.header {
+  position: relative;
+}
+
 .header .address {
   display: flex;
   margin-left: auto;
@@ -446,8 +450,6 @@ img {
   line-height: 1.14286;
   letter-spacing: 0.02em;
   color: #757575;
-  display: block;
-  padding: 32px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
@@ -474,7 +476,6 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
   display: block;
-  padding: 32px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
@@ -495,6 +496,83 @@ img {
   align-items: center;
   justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button .icon-cross {
+    display: none;
+  }
+  .menu-button.is-open .icon-cross {
+    display: block;
+  }
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+  .menu-container {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 480px;
+    width: 453px;
+    background-color: #fff;
+  }
+  .is-open {
+    display: block;
+  }
+  .navigation-list,
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .address-mail,
+  .address-tel {
+    padding: 16px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .menu-button {
+    display: none;
+  }
+  .menu-container {
+    display: flex;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .address-mail,
+  .address-tel {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-button {
+    display: none;
+  }
+  .menu-container {
+    display: flex;
+  }
+  .address-mail,
+  .address-tel {
+    padding: 32px 0;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 480px) {
