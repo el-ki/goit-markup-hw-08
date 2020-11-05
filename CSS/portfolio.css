@@ -414,7 +414,7 @@ img {
   margin-right: 50px;
 }
 
-.header {
+.header .container {
   position: relative;
 }
 
@@ -507,6 +507,17 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .menu-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-button:hover {
+    fill: #2196f3;
+  }
   .menu-button .icon-cross {
     display: none;
   }
@@ -519,12 +530,10 @@ img {
   .menu-container {
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 100%;
-    height: 480px;
-    width: 453px;
     background-color: #fff;
+    padding-bottom: 60px;
   }
   .is-open {
     display: block;
@@ -538,7 +547,7 @@ img {
   }
   .address-mail,
   .address-tel {
-    padding: 16px 0;
+    padding: 8px 0;
   }
 }
 
