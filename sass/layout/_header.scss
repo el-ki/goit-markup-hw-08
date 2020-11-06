@@ -1,6 +1,6 @@
 .navigation {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
   &-list {
     display: flex;
@@ -11,7 +11,7 @@
     letter-spacing: 0.02em;
     color: $secondary-color;
     display: block;
-    padding: 32px 0;
+    // padding: 32px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 
@@ -23,10 +23,6 @@
 
   &-list-item {
     position: relative;
-
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
   }
 }
 .header .container {
@@ -35,10 +31,6 @@
 .header .address {
   display: flex;
   margin-left: auto;
-}
-
-.address-item {
-  margin-right: 50px;
 }
 
 .navigation-list .current {
@@ -167,8 +159,8 @@
   //   flex-direction: column;
   // }
 
-  .navigation-list,
-  .address {
+  .address,
+  .navigation-list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,9 +170,19 @@
   // .navigation-list {
   //   margin-left: 190px;
   // }
-  .address-mail,
-  .address-tel {
-    padding: 8px 0;
+  .address-mail {
+    padding-bottom: 16px;
+  }
+
+  .navigation-list {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .current {
+    padding-bottom: 8px;
   }
 }
 
@@ -202,6 +204,16 @@
     padding: 10px 0;
     // margin-left: 84px;
   }
+
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigation-list-link {
+    padding: 32px 0;
+  }
+  .address-item {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -215,5 +227,15 @@
   .address-tel {
     padding: 32px 0;
     margin-left: auto;
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .navigation-list-link {
+    padding: 32px 0;
+  }
+  .address-item {
+    margin-right: 50px;
   }
 }
