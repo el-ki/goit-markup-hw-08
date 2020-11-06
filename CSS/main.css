@@ -846,6 +846,7 @@ img {
 }
 
 .team {
+  min-width: 480px;
   background: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;

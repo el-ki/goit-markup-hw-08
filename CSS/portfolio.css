@@ -638,6 +638,7 @@ img {
 
 .galery {
   padding: 60px 0;
+  min-width: 480px;
 }
 
 .galery-list {
