@@ -1,29 +1,28 @@
-@media screen and (min-width: 480px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero/bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 118px;
-    padding-top: 118px;
+.hero {
+  min-width: 480px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 118px;
+  padding-top: 118px;
 
-    &-title {
-      font-weight: 900;
-      font-size: 26px;
-      line-height: 1.615;
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: $color-dark-theme;
-      display: block;
-      max-width: 360px;
-      margin-bottom: 30px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  &-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $color-dark-theme;
+    display: block;
+    max-width: 360px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
