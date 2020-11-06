@@ -130,6 +130,7 @@
   }
 
   .menu-container {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -138,10 +139,10 @@
     padding-bottom: 60px;
     z-index: 999;
     border-top: 1px solid #ececec;
-  }
 
-  &.is-open {
-    display: block;
+    &.is-open {
+      display: block;
+    }
   }
 
   .address,

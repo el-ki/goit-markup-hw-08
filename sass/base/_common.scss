@@ -32,17 +32,14 @@ img {
   @media screen and (min-width: 480px) {
     width: 480px;
     margin: 0 auto;
-    // background-color: tomato;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    // background-color: teal;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    // background-color: red;
   }
 
   .header & {
@@ -50,14 +47,3 @@ img {
     align-items: center;
   }
 }
-
-// .container {
-//   width: 1200px;
-//   margin: 0 auto;
-//   padding: 0 15px;
-
-//   .header & {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
