@@ -178,7 +178,7 @@
   .address {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   .address-mail,
@@ -192,9 +192,7 @@
   .navigation-list-link {
     padding: 32px 0;
   }
-  .address-item {
-    margin-right: 50px;
-  }
+
   .header .address {
     margin-left: 84px;
   }
@@ -219,10 +217,10 @@
   .navigation-list-link {
     padding: 32px 0;
   }
-  .address-item {
+  .address-item:not(:last-child) {
     margin-right: 50px;
   }
   .header .address {
-    margin-left: 220px;
+    margin-left: 280px;
   }
 }
