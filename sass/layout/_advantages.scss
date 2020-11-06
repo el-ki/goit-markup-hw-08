@@ -1,6 +1,7 @@
 .advantages {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 480px;
 
   &-title {
     @include font(700, 14px, 16px);

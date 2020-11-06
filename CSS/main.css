@@ -407,6 +407,10 @@ img {
   }
 }
 
+.header {
+  min-width: 480px;
+}
+
 .navigation-list {
   display: flex;
 }
@@ -692,6 +696,7 @@ img {
 .advantages {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 480px;
 }
 
 .advantages-title {
@@ -920,6 +925,7 @@ img {
 
 .clients {
   padding-top: 60px;
+  min-width: 480px;
 }
 
 .title {
@@ -991,6 +997,7 @@ img {
 }
 
 .footer {
+  min-width: 480px;
   background: #2f303a;
   padding-top: 60px;
 }
