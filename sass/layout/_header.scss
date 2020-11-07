@@ -117,15 +117,17 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .menu-button:hover {
-    fill: $accent-color;
-  }
   .menu-button .icon-cross {
     display: none;
   }
 
   .menu-button.is-open .icon-cross {
     display: block;
+  }
+
+  .menu-button-svg:hover {
+    fill: $accent-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .menu-button.is-open .icon-menu {
@@ -177,6 +179,7 @@
     display: none;
   }
   .menu-container {
+    width: 100%;
     display: flex;
   }
   .address {
@@ -196,9 +199,8 @@
   .navigation-list-link {
     padding: 32px 0;
   }
-
-  .header .address {
-    margin-left: 84px;
+  .contacts-menu {
+    margin-left: auto;
   }
 }
 
@@ -224,7 +226,11 @@
   .address-item:not(:last-child) {
     margin-right: 50px;
   }
-  .header .address {
-    margin-left: 280px;
+  .menu-container {
+    width: 100%;
+    display: flex;
+  }
+  .contacts-menu {
+    margin-left: auto;
   }
 }
