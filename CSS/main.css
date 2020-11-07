@@ -560,6 +560,7 @@ img {
     top: 100%;
     left: 0;
     width: 100%;
+    max-width: 480px;
     background-color: #fff;
     padding-bottom: 60px;
     z-index: 999;
