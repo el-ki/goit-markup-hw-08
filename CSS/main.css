@@ -1,4 +1,6 @@
-.checkbox-wrap, .social-list-link, .about-description-text {
+.checkbox-wrap,
+.social-list-link,
+.about-description-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +42,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
     margin: 0 auto;
   }
 }
@@ -341,6 +343,14 @@ img {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .svg-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
 .social-list-link {
   width: 44px;
   height: 44px;
@@ -411,7 +421,10 @@ img {
 
 @media screen and (max-width: 767px) {
   .footer .logo {
-    margin-left: 154px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -422,11 +435,9 @@ img {
 }
 
 .header {
-  min-width: 480px;
   width: 100%;
   position: fixed;
   top: 0;
-  width: 100%;
   background-color: #fff;
   z-index: 99;
 }
@@ -446,7 +457,8 @@ img {
   cursor: pointer;
 }
 
-.navigation-list-link:hover, .navigation-list-link:focus {
+.navigation-list-link:hover,
+.navigation-list-link:focus {
   color: #2196f3;
 }
 
@@ -489,7 +501,8 @@ img {
   cursor: pointer;
 }
 
-.address-mail:hover, .address-mail:focus {
+.address-mail:hover,
+.address-mail:focus {
   color: #2196f3;
 }
 
@@ -515,7 +528,8 @@ img {
   cursor: pointer;
 }
 
-.address-tel:hover, .address-tel:focus {
+.address-tel:hover,
+.address-tel:focus {
   color: #2196f3;
 }
 
@@ -580,7 +594,8 @@ img {
   }
   .menu-container.is-open {
     display: block;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
   }
   .address,
   .navigation-list {
@@ -664,8 +679,11 @@ img {
 }
 
 .hero {
-  min-width: 480px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 118px;
@@ -691,7 +709,9 @@ img {
   margin-right: auto;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+  screen and (min-resolution: 192dpi) and (min-width: 480px),
+  screen and (min-resolution: 2dppx) and (min-width: 480px) {
   .hero {
     background-image: url(../images/hero/bg-mobile@2x.jpg);
   }
@@ -699,11 +719,17 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/bg-tablet.jpg);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: url(../images/hero/bg-tablet@2x.jpg);
   }
@@ -711,7 +737,11 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desktop.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/bg-desktop.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -722,7 +752,9 @@ img {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: url(../images/hero/bg-desktop@2x.jpg);
   }
@@ -731,7 +763,6 @@ img {
 .advantages {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
 }
 
 .advantages-title {
@@ -881,7 +912,6 @@ img {
 }
 
 .team {
-  min-width: 480px;
   background: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -908,12 +938,14 @@ img {
 }
 
 .team-item-img {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .name-container {
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -961,7 +993,6 @@ img {
 
 .clients {
   padding-top: 60px;
-  min-width: 480px;
 }
 
 .title {
@@ -1033,7 +1064,6 @@ img {
 }
 
 .footer {
-  min-width: 480px;
   background: #2f303a;
   padding-top: 60px;
 }
@@ -1051,7 +1081,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-address-link:hover, .footer-address-link:focus {
+.footer-address-link:hover,
+.footer-address-link:focus {
   color: #2196f3;
 }
 
@@ -1067,7 +1098,8 @@ img {
   margin-bottom: 10px;
 }
 
-.footer-mail:hover, .footer-mail:focus {
+.footer-mail:hover,
+.footer-mail:focus {
   color: #2196f3;
 }
 
@@ -1082,7 +1114,8 @@ img {
   display: block;
 }
 
-.footer-tel:hover, .footer-tel:focus {
+.footer-tel:hover,
+.footer-tel:focus {
   color: #2196f3;
 }
 

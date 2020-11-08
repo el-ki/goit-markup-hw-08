@@ -27,7 +27,11 @@
 @media screen and (max-width: 767px) {
   .logo {
     .footer & {
-      margin-left: 154px;
+      // margin-left: 154px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
