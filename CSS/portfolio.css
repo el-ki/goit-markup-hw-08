@@ -424,6 +424,11 @@ img {
 .header {
   min-width: 480px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
 }
 
 .navigation-list {
@@ -665,6 +670,7 @@ img {
 .galery {
   padding: 60px 0;
   min-width: 480px;
+  margin-top: 80px;
 }
 
 .galery-list {

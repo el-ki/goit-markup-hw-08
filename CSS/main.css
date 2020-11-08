@@ -424,6 +424,11 @@ img {
 .header {
   min-width: 480px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
 }
 
 .navigation-list {
@@ -666,7 +671,9 @@ img {
   padding-bottom: 118px;
   padding-top: 118px;
   max-width: 1600px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
 }
 
 .hero-title {
